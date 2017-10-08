@@ -29,6 +29,12 @@ h3 {
     font-size: 1.6em;
 }
 
+.group::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
 p, ul, ol {
     margin-top: 0;
     line-height: 180%;
@@ -47,7 +53,6 @@ a:hover {
 #box {
     background-color: #ffffff;
     height: 100%;
-    clear: both;
 }
 
 #wrapper {
