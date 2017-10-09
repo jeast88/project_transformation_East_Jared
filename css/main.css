@@ -13,6 +13,7 @@ h3 {
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
     color: #222222;
+    text-align: center;
 }
 
 h1 {
@@ -54,6 +55,7 @@ a {
     background: #ffffff url(../img/img05.jpg) repeat;
 }
 
+
 .container {
     width: 200px;
     margin: 0 auto;
@@ -79,7 +81,6 @@ a {
 /* Logo */
 
 #logo {
-    float: left;
     width: 100%;
     text-align: center;
     color: #ffffff;
@@ -143,59 +144,12 @@ a {
 /* Sidebar */
 
 #sidebar {
-    width: 270px;
-    margin: 0;
-    padding: 30px 30px 0 0;
-    text-align: center;
-}
-
-#sidebar ul {
-    list-style: none;
-}
-
-#sidebar li ul {
-    padding-bottom: 30px;
-}
-
-#sidebar li li {
-    line-height: 40px;
-    border-bottom: 1px solid #e7ebed;
-    border-left: none;
-}
-
-#sidebar li li span {
-    display: block;
-    font-size: 11px;
-    font-style: italic;
-}
-
-#sidebar li li a {
-    background: url(../img/img04.jpg) no-repeat left 50%;
-}
-
-#sidebar h2 {
-    height: 38px;
-    letter-spacing: -0.5px;
-    font-size: 1.8em;
-    color: #222222;
-}
-
-#sidebar p {
-    text-align: center;
-}
-
-#sidebar a {
-    border: none;
-}
-
-#sidebar a:hover {
-    text-decoration: underline;
+    visibility: hidden;
 }
 
 
 /* media @ */
-
-@media(min-width: 800px) {
+@media(min-width: 500px) {
 
     body {
         background: #050505 url(../img/img01.jpg) repeat;
@@ -216,14 +170,17 @@ a {
 
     h1 {
         font-size: 2em;
+        text-align: center;
     }
 
     h2 {
         font-size: 2.8em;
+        text-align: center;
     }
 
     h3 {
         font-size: 1.6em;
+        text-align: center;
     }
 
     .group::after {
@@ -248,7 +205,6 @@ a {
     a {
         color: #5e5e5e;
     }
-
 
     #box {
         background-color: #ffffff;
@@ -367,16 +323,13 @@ a {
     /* Menu */
 
     #menu {
-        float: right;
-        width: 500px;
+        width: 700px;
         height: 90px;
         margin: 0 auto;
         padding: 0;
     }
 
     #menu ul {
-        float: right;
-        margin: 0;
         padding: 20px 0 0 0;
         list-style: none;
         line-height: normal;
@@ -390,7 +343,7 @@ a {
         display: block;
         line-height: 100px;
         margin-right: 1px;
-        padding: 0 20px 0 20px;
+        padding: 0 10px 0 10px;
         text-decoration: none;
         text-align: center;
         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
@@ -425,24 +378,26 @@ a {
         width: 660px;
     }
 
-    .post {
+    #post {
         overflow: hidden;
         margin-bottom: 40px;
         border-bottom: 1px solid #e7ebed;
     }
 
-    .post .title {
+    #post title {
         padding: 7px 0 0 0;
         letter-spacing: -1px;
+        text-align: center;
     }
 
-    .post .title a {
+    #post #title a {
         border: none;
+        text-align: center;
         text-decoration: none;
         color: #222222;
     }
 
-    .post .meta {
+    #post #meta {
         margin-bottom: 30px;
         padding: 10px 0 0 0;
         text-align: left;
@@ -451,25 +406,25 @@ a {
         font-weight: 300;
     }
 
-    .post .meta .date {
+    #post #meta #date {
         float: left;
     }
 
-    .post .meta .posted {
+    #post #meta #posted {
         float: right;
     }
 
-    .post .entry {
+    #post #entry {
         padding: 0 0 40px 0;
-        text-align: justify;
+        text-align: center;
     }
 
-    .links {
+    #links {
         padding-top: 20px;
         margin-bottom: 30px;
     }
 
-    .more {
+    #more {
         display: block;
         float: left;
         width: 88px;
@@ -481,7 +436,7 @@ a {
         text-decoration: none;
     }
 
-    .comments {
+    #comments {
         display: block;
         float: left;
         width: 88px;
@@ -489,14 +444,15 @@ a {
         background: #222222;
         color: #ffffff;
         text-align: center;
-        text-decoration: none;margin: auto;
+        text-decoration: none;
+        margin: auto;
         margin-top: 0;
-    }
     }
 
     /* Sidebar */
 
     #sidebar {
+        visibility: visible;
         clear: left;
         width: 270px;
         margin: 0;
@@ -635,6 +591,7 @@ a {
 
     #footer {
         height: 140px;
+        background: #050505 url(../img/img01.jpg) repeat;
         margin: 0 auto;
         padding: 50px 0 15px 0;
         font-family: 'Abel', sans-serif;
